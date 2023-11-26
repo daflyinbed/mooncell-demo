@@ -1,13 +1,29 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://static.prts.wiki/mdi/7.2.96/css/materialdesignicons.min.css" type="text/css" rel="stylesheet">
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.3.67/css/materialdesignicons.min.css" type="text/css"
+    rel="stylesheet">
+</head>
+
+<body>
+  <m-layout class="m-layout">
+    <header class="m-header">title</header>
+    <div class="m-page">
+      <div class="m-page-container">
+        <aside class="m-aside">345</aside>
+        <main class="m-main">
+          <div class="m-content">123</div>
+          <div class="m-toc">234</div>
+        </main>
+      </div>
+    </div>
+    <footer class="m-footer">asd</footer>
+  </m-layout>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
