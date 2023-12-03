@@ -1,0 +1,25 @@
+@layer components {
+  .m-footer-container {
+    @apply container p-8
+  }
+  .m-footer__up {
+    @apply mb-8 flex gap-4
+  }
+  .m-footer__bottom {
+    @apply flex justify-between w-full
+  }
+  .m-footer__bottom_start {
+  }
+  .m-footer__bottom_end {
+    @apply flex-grow
+  }
+  .m-footer__bottom_end > ul {
+    @apply flex
+  }
+  #footer-places li {
+    @apply flex rounded-sm px-2 py-1.5 text-sm outline-none transition-colors hover:bg-accent hover:text-accent-foreground
+  }
+  .m-footer-places-item a{
+    @apply w-full h-full
+  }
+}

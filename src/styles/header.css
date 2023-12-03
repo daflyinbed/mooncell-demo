@@ -1,0 +1,27 @@
+@layer components {
+  .m-header{
+    @apply bg-background sticky top-0 z-50 border-b
+  }
+  .m-header-container {
+    @apply container flex h-14 items-center
+  }
+  .m-header-start {
+    @apply mr-4 hidden md:flex
+  }
+  .m-header-logo {
+    @apply mr-6 flex items-center space-x-2
+  }
+  .m-header-logo > img {
+    @apply h-6 w-6
+  }
+  .m-header-logo > span {
+    @apply hidden font-bold sm:inline-block
+  }
+  .m-header-end {
+    @apply flex flex-1 items-center justify-between space-x-2 md:justify-end
+  }
+  .m-header-end > nav {
+    @apply flex items-center;
+  }
+}
+

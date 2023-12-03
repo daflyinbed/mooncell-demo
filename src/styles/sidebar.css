@@ -1,0 +1,23 @@
+@layer components {
+  .m-aside-nav{
+    @apply relative h-full py-6 pl-8 pr-6 lg:py-8 overflow-auto
+  }
+  .m-aside-nav-list{
+    @apply h-full w-full ;
+  }
+  .m-aside-nav-list-item{
+    @apply pb-4
+  }
+  .m-aside-nav-list-title {
+    @apply mb-1 rounded-md px-2 py-1 text-sm font-semibold
+  }
+  .m-aside-nav-list-items-group{
+    @apply grid grid-flow-row auto-rows-max text-sm
+  }
+  .m-aside-nav-list-items-group > li{
+    @apply flex w-full items-center rounded-md border border-transparent px-2 py-1 hover:underline text-muted-foreground
+  }
+  .m-aside-nav-list-items-group > li > a{
+    @apply w-full h-full
+  }
+}

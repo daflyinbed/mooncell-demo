@@ -1,0 +1,5 @@
+@layer components {
+  .m-user-menu-icon {
+    @apply text-[1.5rem]
+  }
+}

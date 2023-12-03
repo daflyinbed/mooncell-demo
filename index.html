@@ -11,17 +11,186 @@
 
 <body>
   <m-layout class="m-layout">
-    <header class="m-header">title</header>
+    <header class="m-header">
+      <div class="m-header-container">
+        <div class="m-header-start">
+          <a class="m-header-logo" href="{{link-mainpage}}">
+            <img src="/w/resources/assets/change-your-logo-icon.svg">
+            <span>{{msg-sitetitle}}</span>
+          </a>
+          <nav class="m-nav-menu">
+            <ul class="m-nav-menu-list">
+              <li class="m-nav-menu-item">
+                <button class="m-nav-menu-trigger group">
+                  123123
+                  <span class="mdi mdi-chevron-down m-nav-menu-trigger-icon"></span>
+                </button>
+                <div class="m-nav-menu-content">
+                  <div class="w-48 h-48">123</div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="m-header-end">
+          <nav>
+            <div class="m-dropdown">
+              <div tabindex="0" class="m-button m-button__ghost m-button__icon">
+                <span class="mdi mdi-account m-user-menu-icon"></span>
+              </div>
+              <aside class="m-dropdown-content m-dropdown-content__end">
+                <nav id="p-user-page" class="mw-portlet mw-portlet-user-page">
+                  <div id="pt-userpage-2" class="m-dropdown-label mw-list-item"><a href="/wiki/User:Admin" class="new"
+                      title="Your user page (page does not exist) [alt-shift-.]" accesskey=".">Admin</a></div>
+                </nav>
+                <div class="m-dropdown-separator"></div>
+                <ul role="group" id="p-personal" class="mw-portlet mw-portlet-personal" title="User menu">
+                  <li id="pt-mytalk" class="new m-dropdown-item mw-list-item"><a href="/wiki/User_talk:Admin"
+                      title="Your talk page (page does not exist) [alt-shift-n]" accesskey="n">Talk</a></li>
+                  <li id="pt-preferences" class="m-dropdown-item mw-list-item"><a href="/wiki/Special:Preferences"
+                      title="Your preferences">Preferences</a></li>
+                  <li id="pt-watchlist" class="m-dropdown-item mw-list-item"><a href="/wiki/Special:Watchlist"
+                      title="A list of pages you are monitoring for changes [alt-shift-l]" accesskey="l">Watchlist</a>
+                  </li>
+                  <li id="pt-mycontris" class="m-dropdown-item mw-list-item"><a href="/wiki/Special:Contributions/Admin"
+                      title="A list of your contributions [alt-shift-y]" accesskey="y">Contributions</a></li>
+                  <li id="pt-logout" class="m-dropdown-item mw-list-item"><a
+                      href="/w/index.php?title=Special:UserLogout&amp;returnto=Main+Page" data-mw="interface"
+                      title="Log out">Log out</a></li>
+                </ul>
+              </aside>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
     <div class="m-page">
       <div class="m-page-container">
-        <aside class="m-aside">345</aside>
+        <aside class="m-aside ">
+          <nav class="m-aside-nav m-styled-scrollbar">
+            <ul class="m-aside-nav-list">
+              <li id="p-navigation" class="mw-portlet mw-portlet-navigation m-aside-nav-list-item" title=""
+                aria-labelledby="p-navigation-label">
+                <h4 class="m-aside-nav-list-title" id="p-navigation-label">
+                  Navigation
+                </h4>
+                <ul class="mw-portlet-body m-aside-nav-list-items-group">
+                  <li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page"
+                      title="Visit the main page [alt-shift-z]" accesskey="z">Main page</a></li>
+                  <li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges"
+                      title="A list of recent changes in the wiki [alt-shift-r]" accesskey="r">Recent changes</a></li>
+                  <li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random"
+                      title="Load a random page [alt-shift-x]" accesskey="x">Random page</a></li>
+                  <li id="n-help-mediawiki" class="mw-list-item"><a
+                      href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a>
+                  </li>
+                  <li id="n-teste" class="mw-list-item"><a href="/wiki/Test">teste</a></li>
+                </ul>
+              </li>
+
+              <li id="p-navigation22" class="mw-portlet mw-portlet-navigation22 m-aside-nav-list-item" title=""
+                aria-labelledby="p-navigation22-label">
+                <h4 class="m-aside-nav-list-title" id="p-navigation22-label">
+                  navigation22
+                </h4>
+                <ul class="mw-portlet-body m-aside-nav-list-items-group">
+                  <li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page"
+                      title="Visit the main page [alt-shift-z]" accesskey="z">Main page</a></li>
+                  <li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges"
+                      title="A list of recent changes in the wiki [alt-shift-r]" accesskey="r">Recent changes</a></li>
+                  <li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random"
+                      title="Load a random page [alt-shift-x]" accesskey="x">Random page</a></li>
+                  <li id="n-help-mediawiki" class="mw-list-item"><a
+                      href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a>
+                  </li>
+                  <li id="n-teste" class="mw-list-item"><a href="/wiki/Test">teste</a></li>
+                </ul>
+              </li>
+              <li id="p-support" class="mw-portlet mw-portlet-support m-aside-nav-list-item" title=""
+                aria-labelledby="p-support-label">
+                <h4 class="m-aside-nav-list-title" id="p-support-label">
+                  support
+                </h4>
+                <ul class="mw-portlet-body m-aside-nav-list-items-group">
+                  <li id="n-teststesetsetset" class="mw-list-item"><a href="/wiki/Test">teststesetsetset</a></li>
+                  <li id="n-help" class="mw-list-item"><a href="/wiki/Special:MyLanguage/Help:Contents"
+                      title="The place to find out">Help</a></li>
+                  <li id="n-mw-faq" class="mw-list-item"><a href="/wiki/Mw-faq-url">mw-faq</a></li>
+                  <li id="n-mw-manual" class="mw-list-item"><a href="/wiki/Mw-manual-url">mw-manual</a></li>
+                  <li id="n-mw-supportdesk" class="mw-list-item"><a href="/wiki/Project:Support_desk">mw-supportdesk</a>
+                  </li>
+                  <li id="n-mw-communication" class="mw-list-item"><a
+                      href="/wiki/Special:MyLanguage/Communication">mw-communication</a></li>
+                </ul>
+              </li>
+              <li id="p-tb" class="mw-portlet mw-portlet-tb m-aside-nav-list-item" title=""
+                aria-labelledby="p-tb-label">
+                <h4 class="m-aside-nav-list-title" id="p-tb-label">
+                  Tools
+                </h4>
+                <ul class="mw-portlet-body m-aside-nav-list-items-group">
+                  <li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Main_Page"
+                      title="A list of all wiki pages that link here [alt-shift-j]" accesskey="j">What links here</a>
+                  </li>
+                  <li id="t-recentchangeslinked" class="mw-list-item"><a
+                      href="/wiki/Special:RecentChangesLinked/Main_Page" rel="nofollow"
+                      title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related
+                      changes</a></li>
+                  <li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages"
+                      title="A list of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li>
+                  <li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate"
+                      title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a></li>
+                  <li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Main_Page&amp;oldid=1"
+                      title="Permanent link to this revision of this page">Permanent link</a></li>
+                  <li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Main_Page&amp;action=info"
+                      title="More information about this page">Page information</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </aside>
         <main class="m-main">
           <div class="m-content">123</div>
           <div class="m-toc">234</div>
         </main>
       </div>
     </div>
-    <footer class="m-footer">asd</footer>
+    <footer class="m-footer">
+      <div class="m-footer-container">
+        <section class="m-footer__up">
+          <div class="citizen-footer__siteinfo">
+            <div id="footer-sitetitle" class="mw-wiki-title">
+              <div class="mw-logo-wordmark">MediaWiki</div>
+            </div>
+            <p id="footer-desc"></p>
+          </div>
+          <nav id="footer-places">
+            <ul>
+              <li class="m-footer-places-item" id="footer-places-privacy"><a href="/wiki/Project:Privacy_policy">Privacy
+                  policy</a></li>
+              <li class="m-footer-places-item" id="footer-places-about"><a href="/wiki/Project:About">About
+                  MediaWiki</a></li>
+              <li class="m-footer-places-item" id="footer-places-disclaimer"><a
+                  href="/wiki/Project:General_disclaimer">Disclaimers</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section class="m-footer__bottom">
+          <div class="m-footer__bottom_start">testtest</div>
+          <nav id="m-footer__bottom_end" class="noprint">
+            <ul>
+              <li id="footer-poweredbyico">
+                <a href="https://www.mediawiki.org/">
+                  <img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki"
+                    srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x"
+                    width="88" height="31" loading="lazy">
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+    </footer>
   </m-layout>
   <script type="module" src="/src/main.ts"></script>
 </body>

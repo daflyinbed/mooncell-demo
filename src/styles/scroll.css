@@ -1,0 +1,29 @@
+/* copy from nextjs doc */
+@layer utilities{
+  .m-styled-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #eaeaea transparent;
+    scrollbar-gutter: stable
+  }
+
+  .m-styled-scrollbar::-webkit-scrollbar {
+    height: .375rem;
+    width: .75rem
+  }
+
+  .m-styled-scrollbar::-webkit-scrollbar-track {
+    background-color: transparent
+  }
+
+  .m-styled-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: .375rem
+  }
+
+  @media (hover: hover) {
+    .m-styled-scrollbar:hover::-webkit-scrollbar-thumb {
+      border:3px solid transparent;
+      @apply bg-border;
+      background-clip: content-box
+    }
+  }
+}

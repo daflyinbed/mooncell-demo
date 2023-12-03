@@ -1,0 +1,29 @@
+@layer components {
+  .m-dropdown {
+    @apply relative
+  }
+  .m-dropdown:is(:not(details)) .m-dropdown-content{
+    @apply invisible opacity-0;
+  }
+  .m-dropdown .m-dropdown-content {
+    @apply absolute z-50 min-w-[8rem] overflow-hidden rounded-md border bg-popover p-1 text-popover-foreground shadow-md;
+  }
+  .m-dropdown:focus-within .m-dropdown-content{
+    @apply visible opacity-100;
+  }
+  .m-dropdown-content__end{
+    right: 0;
+  }
+  .m-dropdown-label {
+    @apply px-2 py-1.5 text-sm font-semibold
+  }
+  .m-dropdown-separator {
+    @apply -mx-1 my-1 h-px bg-muted
+  }
+  :where(.m-dropdown-item, .m-dropdown-ul > li) {
+    @apply flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors hover:bg-accent hover:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50
+  }
+  :where(.m-dropdown-label, .m-dropdown-item) > a {
+    @apply w-full h-full
+  }
+}
